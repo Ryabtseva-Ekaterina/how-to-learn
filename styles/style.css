@@ -49,7 +49,7 @@
   bottom: 0;
   right: 0;
   z-index: 1;
-  background-size: contain;
+  object-fit: fill;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -151,7 +151,6 @@
 
 .section-title_theme_dark {
   color: white;
-  margin-top: 90px;
   z-index: 1;
 }
 
@@ -176,11 +175,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 0;
 }
 
 .table_theme_dark {
   position: relative;
-  margin-bottom: 90px;
 }
 
 .table__cell {
@@ -222,7 +221,7 @@
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
   background-image: url('../images/feynman.png');
   background-size: 867px 637px;
@@ -232,12 +231,13 @@
   display: flex;
   flex-direction: column;
   align-items:center;
+  padding-top: 100px;
+  box-sizing: border-box;
 }
 
 .feynman__title {
   width: 648px;
   margin: 0;
-  margin-top: 100px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -269,6 +269,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+  padding: 90px 0;
 }
 
 .kaufman__triangle {
@@ -286,6 +287,7 @@
   min-height: 350px;
   display: flex;
   padding: 60px 0 40px;
+  box-sizing: border-box;
 }
 
 .footer__columns {
@@ -295,21 +297,21 @@
   margin: 0 auto;
 }
 
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
+}
+.footer__column_content_copyright {
   flex-direction: column;
   flex-basis: 711px;
   justify-content: space-between;
 }
 
 .footer__column_content_info {
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .footer__column_content_social {
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -329,9 +331,12 @@
   font-size: 18px;
   font-weight: bold;
 }
-.footer__column_links {
+.footer__column-links {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   margin: 20px 0 16px;
   justify-content: space-between;
 }
