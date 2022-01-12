@@ -49,7 +49,7 @@
   bottom: 0;
   right: 0;
   z-index: 1;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
