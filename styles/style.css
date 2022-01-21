@@ -193,6 +193,35 @@
   text-align: center;
 }
 
+.video {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+}
+
+.video__iframes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 0 20px;
+  height: 256px;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+}
+
+.oakley {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding-top: 160px;
+}
+
 .digits {
   margin: 100px 0;
   display: flex;
