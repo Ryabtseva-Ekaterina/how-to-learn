@@ -203,6 +203,31 @@
         <div class="kaufman__triangle rotation"></div>
       </section>
 
+      <section class="form-section">
+        <form class="form">
+          <fieldset class="form__contact-info">
+            <label for="first-name" class="form__label">Имя</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Иван" required class="form__input">
+            <label for="email" class="form__label">Электонная почта</label>
+            <input type="email" id="email" name="email" placeholder="ivan@ua.ru" required lass="form__input">
+            <label for="tel" class="form__label">Телефон</label>
+            <input type="tel" id="tel" name="phone" placeholder="+11111111111" required lass="form__input">
+            <label for="course" class="form__label">Выбери свой курс</label>
+            <select id="course" name="course" required>
+              <option value="design">Дизайн</option>
+              <option value="analytics">Аналитика</option>
+              <option value="web-development">Веб-разработка</option>
+              <option value="copywriting">Копирайтинг</option>
+              <option value="team-management">Управление командой</option>
+            </select>
+            <p>Согласен(на) с политикой обработки конфиденциальных данных</p>
+            <label for="yes" class="form__label">Да</label>
+            <input type="checkbox" name="agreement" id="yes" value="yes" checked lass="form__input">
+            <button type="submit">Отправить</button>
+          </fieldset>
+        </form>
+      </section>
+
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
